@@ -23,7 +23,7 @@ class IndecisionApp extends React.Component {
         }
     }
     componentDidUpdate(prevProps, prevState){
-        // console.log('component updated');
+        
         if (prevState.options.length !== this.state.options.length){
             localStorage.setItem("options", JSON.stringify(this.state.options));
         }
